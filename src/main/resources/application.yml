@@ -4,3 +4,12 @@
 #    console: "%d - %msg%n"
 server:
   port: 9999
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://10.72.200.159/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
