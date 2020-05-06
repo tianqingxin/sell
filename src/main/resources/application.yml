@@ -1,0 +1,6 @@
+#logging:
+#  pattern:
+##    日志输出格式
+#    console: "%d - %msg%n"
+server:
+  port: 9999
