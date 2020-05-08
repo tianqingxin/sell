@@ -37,6 +37,6 @@ public class PruductCategory {
     /**
      * 类目编号
      */
-    private int categoryType;
+    private Integer categoryType;
 
 }

@@ -4,12 +4,22 @@
 #    console: "%d - %msg%n"
 server:
   port: 9999
+  servlet:
+    context-path: /sell
 
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: 123456
-    url: jdbc:mysql://10.72.200.159/sell?characterEncoding=utf-8&useSSL=false
+    password: tqxsdz430+
+    url: jdbc:mysql://cdb-5ox6sfts.bj.tencentcdb.com:10155/sell?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: root
+#    password: 123456
+#    url: jdbc:mysql://10.72.200.159/sell?characterEncoding=utf-8&useSSL=false
+#  jpa:
+#    show-sql: true
