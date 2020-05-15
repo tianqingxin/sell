@@ -19,4 +19,5 @@ public interface ProductInfoRepository extends JpaRepository<ProductInfo,String>
      * @return
      */
     List<ProductInfo> findByProductNameIsLike(String productName);
+
 }

@@ -1,5 +1,6 @@
 package com.imooc.sell.service;
 
+import com.imooc.sell.dto.ProductDTO;
 import com.imooc.sell.pojo.ProductInfo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -53,4 +54,22 @@ public interface ProductInfoService {
      * @return
      */
     ProductInfo savePro(ProductInfo productInfo);
+
+    /**
+     * 根据商品id批量查询
+     * @param productIdList
+     * @return
+     */
+    List<ProductInfo> findByIdIn(List<String> productIdList);
+
+    /**
+     * 增加库存
+     * @param productDTOList
+     */
+    void addStock(List<ProductDTO> productDTOList);
+    /**
+     * 减少库存
+     * @param productDTOList
+     */
+    void delStock(List<ProductDTO> productDTOList);
 }
