@@ -68,6 +68,7 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     }
 
     @Override
+    @Transactional
     public void addStock(List<ProductDTO> productDTOList) {
         List<String> productIdList = productDTOList.stream().map(productDTO -> productDTO.getProductId())
                 .collect(Collectors.toList());

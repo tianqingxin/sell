@@ -10,7 +10,5 @@ public class StringUtils {
         return UUID.randomUUID().toString().replace("-", "").toLowerCase();
     }
 
-//    public static void main(String[] args) {
-//        log.info("uuid={},length={}",getUuid(),getUuid().length());
-//    }
+
 }

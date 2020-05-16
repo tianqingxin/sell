@@ -19,6 +19,17 @@ public class ResultVOUtils {
         responseData.setMsg("成功");
         return responseData;
     }
+
+    /**
+     * 返回成功
+     * @return
+     */
+    public static ResponseData success(){
+        ResponseData responseData = new ResponseData();
+        responseData.setCode(0);
+        responseData.setMsg("成功");
+        return responseData;
+    }
     /**
      * 返回失败
      * @param msg 失败信息

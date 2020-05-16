@@ -47,4 +47,7 @@ public interface OrderService {
      * @return
      */
     OrderDTO payOrder(OrderDTO orderDTO);
+
+
+//    OrderDTO findOrderByOrderIdAndOpenid(String orderId, String openid);
 }

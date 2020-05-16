@@ -1,5 +1,7 @@
 package com.imooc.sell.pojo;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.imooc.sell.serializer.Date2LongSerializer;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -47,9 +49,11 @@ public class OrderDetail {
     /**
      * 创建时间
      */
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date createTime;
     /**
-     * 创建时间
+     * 修改时间
      */
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
 }
