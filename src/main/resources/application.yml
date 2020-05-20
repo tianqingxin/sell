@@ -26,6 +26,8 @@ spring:
 #    url: jdbc:mysql://10.72.200.159/sell?characterEncoding=utf-8&useSSL=false
 #  jpa:
 #    show-sql: true
-
+wechat:
+  mpAppId:
+  mpAppSecret:
 regex:
   phone-reg: ^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(17[013678])|(18[0,5-9]))\d{8}$
