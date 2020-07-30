@@ -27,7 +27,11 @@ spring:
 #  jpa:
 #    show-sql: true
 wechat:
-  mpAppId:
-  mpAppSecret:
+  mpAppId: wxd898fcb01713c658
+  mpAppSecret: 29d8a650db31472aa87800e3b0d739f2
+  mchId: 18766170466
+  mchKey: c976503d34ca432c601361f969fd8d85
+  keyPath: yixzoderaz8652
+  notifyUrl: http://192.168.11.105:9999/sell/notify
 regex:
   phone-reg: ^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(17[013678])|(18[0,5-9]))\d{8}$

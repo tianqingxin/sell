@@ -14,7 +14,8 @@ public enum ResultEnum {
     ORDER_HAS_FINISHED(40,"订单已完成"),
     ORDER_STATUS_UPDATE_FAILURE(50,"订单更新失败"),
     ORDER_PAY_STATUS_ERROR(60,"订单支付状态不正确"),
-    WECHAT_INFO_ERROR(70,"微信信息错误");
+    WECHAT_INFO_ERROR(70,"微信信息错误"),
+    ORDER_NOT_EXIST(80,"订单不存在");
     private Integer code;
     private String  msg;
 }

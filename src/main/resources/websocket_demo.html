@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>websocket测试</title>
+</head>
+<body>
+<script>
+    var websocket = null;
+    if ('WebSocket' in window) {
+        websocket = new WebSocket("ws://127.0.0.1:9999/sell/webSocket");
+    } else {
+        alert("浏览器不支持websocket！");
+    }
+    websocket.onopen = function (event) {
+        console.log("建立websocket连接");
+    }
+    websocket.onclose = function (event) {
+        console.log("关闭websocket连接");
+    }
+    websocket.onmessage = function (event) {
+        console.log("消息内容：", event.data);
+    }
+    websocket.onerror = function (event) {
+        console.error("异常消息内容：", event.data);
+    }
+
+    window.onbeforeunload = function (ev) {
+        websocket.close();
+    }
+</script>
+</body>
+</html>

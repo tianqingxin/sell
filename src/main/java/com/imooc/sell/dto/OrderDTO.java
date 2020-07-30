@@ -1,6 +1,5 @@
 package com.imooc.sell.dto;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.imooc.sell.pojo.OrderDetail;
 import com.imooc.sell.serializer.Date2LongSerializer;

@@ -5,10 +5,13 @@ import lombok.extern.slf4j.Slf4j;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
+import java.util.concurrent.BlockingDeque;
+import java.util.concurrent.LinkedBlockingDeque;
 
 @Slf4j
 public class TestUtils {
 
+    private BlockingDeque blockingDeque = new LinkedBlockingDeque(1);
     public static void getTest(String ... strings){
         for (int i =0 ; i < strings.length; i++){
             String str=strings[i];
@@ -17,12 +20,13 @@ public class TestUtils {
     }
 
     public static void main(String[] args){
+
 //        getTest("1","2","3");
 //        dataFormatter();
         //启动线程方法;start()和run()区别：
         //start()方法是真正意义上的启动线程，该方法会创建一个新线程，去执行线程中的程序；
         //run()方法跟普通程序执行一致，按顺序执行，在执行完成以后再进行下一步程序的执行。
-        newThread().start();
+//        newThread().start();
     }
 
     public static void dataFormatter(){
